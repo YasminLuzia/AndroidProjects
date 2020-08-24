@@ -26,7 +26,7 @@ class Quiz {
 
             questionsArray.add(Question(context?.getString(R.string.question_6), context?.getString(R.string.question_6_option_1), context?.getString(R.string.question_6_option_2), context?.getString(R.string.question_6_option_3), context?.getString(R.string.question_6_option_4), context?.getString(R.string.question_6_option_1)))
 
-            questionsArray.add(Question(context?.getString(R.string.question_7), context?.getString(R.string.question_5_option_1), context?.getString(R.string.question_5_option_2), context?.getString(R.string.question_5_option_3), context?.getString(R.string.question_5_option_4), context?.getString(R.string.question_5_option_3)))
+            questionsArray.add(Question(context?.getString(R.string.question_7), context?.getString(R.string.question_5_option_1), context?.getString(R.string.question_5_option_2), context?.getString(R.string.question_5_option_3), context?.getString(R.string.question_5_option_4), context?.getString(R.string.question_5_option_2)))
 
             questionsArray.add(Question(context?.getString(R.string.question_8), context?.getString(R.string.question_8_option_1), context?.getString(R.string.question_8_option_2), context?.getString(R.string.question_8_option_3), context?.getString(R.string.question_8_option_4), context?.getString(R.string.question_8_option_4)))
 
@@ -41,9 +41,9 @@ class Quiz {
         }
 
         fun questionsShuffle() {
-            while (questionsArray.get(0).repeatedQuestion) {
+            do {
                 questionsArray.shuffle()
-            }
+            }while (questionsArray.get(0).repeatedQuestion)
             markAsRepeatedAnswer()
         }
 

@@ -18,4 +18,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, QuestionActivity1::class.java))
         }
     }
+
+    override fun onRestart() {
+        Quiz.clearAll()
+    }
 }

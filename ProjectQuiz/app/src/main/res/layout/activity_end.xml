@@ -4,39 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EndActivity"
-    android:background="@drawable/background_shape">
+    android:background="@drawable/background_shape"
+    tools:context=".EndActivity">
 
     <TextView
         android:id="@+id/textViewFinalScore"
+        style="@style/text_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/text_question"
         android:text="@string/final_score"
+        app:layout_constraintBottom_toTopOf="@+id/textViewScore"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewScore"
+        style="@style/text_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/text_question"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlayAgain"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewFinalScore" />
-
-    <TextView
-        android:id="@+id/textViewCorrectAnswers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/text_question"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScore"
-        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/buttonPlayAgain"
@@ -47,6 +39,7 @@
         android:text="@string/button_play_again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textViewFinalScore"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/textViewFinalScore"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCorrectAnswers" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore" />
 </androidx.constraintlayout.widget.ConstraintLayout>
