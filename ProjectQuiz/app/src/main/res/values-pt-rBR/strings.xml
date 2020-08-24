@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Quiz dos deuses Gregos</string>
+    <string name="app_name">Quiz dos deuses gregos</string>
     <string name="icon_description">Icone de um pilar grego meio destruido</string>
-    <string name="welcome_text">Bem-vindo ao Quiz dos deuses Gregos!</string>
+    <string name="welcome_text">Bem-vindo ao quiz dos deuses gregos!</string>
     <string name="button_start">Começar</string>
     <string name="button_select_answer">Selecionar</string>
     <string name="button_next">Próximo</string>

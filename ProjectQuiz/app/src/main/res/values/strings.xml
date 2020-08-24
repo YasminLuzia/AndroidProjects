@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Greek gods Quiz</string>
+    <string name="app_name">Greek gods quiz</string>
     <string name="icon_description">Icon of a half destroyed greek pillar</string>
-    <string name="welcome_text">Welcome to the Quiz of the Greek gods!</string>
+    <string name="welcome_text">Welcome to the quiz of the greek gods!</string>
     <string name="button_start">Start</string>
     <string name="button_select_answer">Select</string>
     <string name="button_next">Next</string>
